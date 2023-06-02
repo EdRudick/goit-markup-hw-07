@@ -177,6 +177,13 @@ body {
     background-position: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .main-section {
+        background-image: url("./images/hero/bg-hero@2x.jpg 2x");
+    }
+}
+
 .ms-container {
     padding: 188px 0;
 }
