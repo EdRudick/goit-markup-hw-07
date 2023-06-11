@@ -140,6 +140,7 @@ body {
         height: 100%;
         padding-top: 80px;
         padding-left: 24px;
+        padding-bottom: 24px;
     }
 
     .mobile-menu-close-btn {
@@ -161,6 +162,14 @@ body {
         display: flex;
         flex-direction: column;
         height: 100%;
+        justify-content: space-between;
+    }
+
+    .mobile-item-menu-container-ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        row-gap: 40px;
     }
 
     .page-header {
@@ -170,7 +179,6 @@ body {
 
     .mobile-menu-item {
         display: block;
-        margin-bottom: 40px;
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -196,10 +204,6 @@ body {
     .current {
         position: static;
         color: #404bbf;
-    }
-
-    .mobile-contacts-container {
-        margin-top: 284px;
     }
 
     .mobile-address-item-email {
@@ -262,9 +266,9 @@ body {
     }
 
     .page-header-container {
-        max-width: 1153px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .page-navigation {
@@ -315,7 +319,6 @@ body {
     .address-container {
         display: flex;
         flex-direction: column;
-        padding-top: 16px;
         gap: 12px;
     }
 
@@ -446,7 +449,6 @@ body {
     }
 
     .title {
-        width: 320px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -488,6 +490,17 @@ body {
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--primary-white-color);
+    }
+
+    .button-container {
+        display: block;
+        min-width: 169px;
+        height: 56px;
+        margin-top: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        border: none;
     }
 }
 
@@ -669,8 +682,7 @@ body {
 @media screen and (min-width: 1200px) {
     .principles-section-container {
         height: 100%;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 15px 0;
     }
 
     .principles-container {
@@ -1073,7 +1085,7 @@ body {
     }
 
     .customers-container {
-        min-width: 428px;
+        max-width: 197.47px;
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -1275,6 +1287,10 @@ body {
     padding: 96px 0 120px;
 }
 
+.menu-port-container {
+    padding: 0 15px;
+}
+
 .porto-container {
     display: flex;
     flex-direction: row;
@@ -1370,10 +1386,11 @@ body {
     .footer-container1 {
         display: block;
         justify-content: center;
-        max-width: 450px;
+        max-width: 268px;
     }
 
     .logo-foot-container {
+        max-width: 116.74px;
         display: inline-block;
         margin-bottom: 16px;
     }
@@ -1398,10 +1415,12 @@ body {
     }
 
     .media-container {
+        max-width: 208px;
         margin-bottom: 72px;
     }
 
     .media-list {
+        max-width: 96px;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
@@ -1439,6 +1458,7 @@ body {
     }
 
     .footer-form-subscribe-wrapper {
+        max-width: 398px;
         display: block;
         justify-content: center;
         width: 100%;
@@ -1495,7 +1515,7 @@ body {
 
     .subscribe-btn {
         display: block;
-        min-width: 165px;
+        max-width: 165px;
         margin-top: 16px;
         margin-left: auto;
         margin-right: auto;
@@ -1540,6 +1560,7 @@ body {
         text-align: center;
         width: 584px;
         max-height: 664px;
+        padding: 0 15px;
     }
 
     .footer-container1 {
