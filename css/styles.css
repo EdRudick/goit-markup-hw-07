@@ -78,21 +78,21 @@ body {
 
 /*HEADER*/
 /* 0px - 1200px */
-@media screen and (min-width: 280px) {
-    .logo {
-        font-family: var(--secondary-font);
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: var(--btn-color);
-    }
+.page-header {}
 
-    .logo-studio {
-        color: var(--secondary-background-color);
-    }
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--btn-color);
+}
+
+.logo-studio {
+    color: var(--secondary-background-color);
 }
 
 /* 0px - 767px */
@@ -103,6 +103,10 @@ body {
 
     .contacts {
         display: none;
+    }
+
+    .page-header-container {
+        max-width: 767px;
     }
 
     .mobile-menu-open-btn {
@@ -117,6 +121,7 @@ body {
     .mobile-menu {
         position: fixed;
         height: 100%;
+        width: 100%;
         justify-content: center;
         top: 0;
         left: 0;
@@ -196,7 +201,7 @@ body {
     }
 
     .mobile-contacts-container {
-        margin-top: 144px;
+        margin-top: 284px;
     }
 
     .mobile-address-item-email {
@@ -237,7 +242,7 @@ body {
 }
 
 .page-header-container {
-    width: 1158px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -259,7 +264,7 @@ body {
     }
 
     .page-header-container {
-        max-width: 1200px;
+        max-width: 1153px;
         display: flex;
         justify-content: space-between;
     }
@@ -310,9 +315,10 @@ body {
     }
 
     .address-container {
-        display: block;
-        padding: 24px 0;
-        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+        gap: 12px;
     }
 
     .address {
@@ -344,6 +350,7 @@ body {
     }
 
     .page-header-container {
+        max-width: 1153px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -499,52 +506,52 @@ body {
     .ms-container {
         padding: 188px 0;
     }
-}
 
-.title-container {
-    max-width: 496px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .title-container {
+        max-width: 496px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.title {
-    width: 496px;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--primary-white-color);
-}
+    .title {
+        width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--primary-white-color);
+    }
 
-.button-container {
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    margin-top: 48px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
-    border: none;
-}
+    .button-container {
+        display: block;
+        min-width: 169px;
+        height: 56px;
+        margin-top: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        border: none;
+    }
 
-.button {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--primary-white-color);
-    background-color: var(--btn-color);
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: background-color var(--transition-duration-and-func);
-}
+    .button {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: var(--primary-white-color);
+        background-color: var(--btn-color);
+        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: background-color var(--transition-duration-and-func);
+    }
 
-.button:hover,
-.button:focus {
-    background-color: var(--accent-color);
+    .button:hover,
+    .button:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 /* Princ Section */
@@ -554,8 +561,10 @@ body {
     }
 
     .principles-container {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        gap: 72px;
     }
 
     .visually-hidden {
