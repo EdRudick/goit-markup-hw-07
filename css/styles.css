@@ -94,6 +94,7 @@ body {
 }
 
 .mobile-social-list {
+    min-width: 320px;
     gap: 24px;
 }
 
