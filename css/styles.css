@@ -93,6 +93,10 @@ body {
     color: var(--secondary-background-color);
 }
 
+.mobile-social-list {
+    gap: 24px;
+}
+
 /* 0px - 767px */
 @media screen and (max-width: 767px) {
     .menu {
@@ -217,9 +221,10 @@ body {
     }
 
     .mobile-social-list {
+        min-width: 428px;
         display: flex;
         margin-top: 48px;
-        gap: 32px;
+        gap: 56px;
     }
 
     .social-list-item {
@@ -418,12 +423,18 @@ body {
 }
 
 /* 0px - 767px */
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .main-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-hero@2x.jpg");
+    }
+}
+
 @media screen and (max-width: 767px) {
     .main-section {
         background-color: var(--secondary-background-color);
         width: 100%;
-        height: 432px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-hero@2x.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -461,14 +472,21 @@ body {
 }
 
 /* 768px - 1199px */
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .main-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-hero@2x.jpg");
+    }
+}
+
 @media screen and (min-width: 768px) {
     .main-section {
         background-color: var(--secondary-background-color);
         width: 100%;
-        height: 436px;
         margin-left: auto;
         margin-right: auto;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-hero.jpg");
+
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -506,12 +524,18 @@ body {
     }
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 96dpi),
+(min-resolution: 1dppx) {
+    .main-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-hero.jpg");
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .main-section {
         background-color: var(--secondary-background-color);
         max-width: 1440px;
-        height: 600px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/bg-hero.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1471,7 +1495,6 @@ body {
     }
 
     .footer-subscribe-wrapper {
-        width: 100%;
         color: #ffffff;
     }
 
@@ -1903,7 +1926,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 408px;
+        min-width: 320px;
         min-height: 584px;
         padding: 72px 24px 24px 24px;
         background-color: #fcfcfc;
