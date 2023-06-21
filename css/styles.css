@@ -138,7 +138,7 @@ body {
     visibility: hidden;
     pointer-events: auto;
     transform: var(--transition-duration-and-func);
-    transition: transform-tr;
+    transition: transformX(100%);
   }
 
   .mobile-menu.is-open {
